@@ -1,0 +1,92 @@
+{
+  "agents": [
+    {
+      "id": "2026003",
+      "name": "장준혁",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026004",
+      "name": "김세중",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026005",
+      "name": "하은수",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026006",
+      "name": "이준영",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026007",
+      "name": "고태윤",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026008",
+      "name": "박승완",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026009",
+      "name": "김민준",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "day_only"
+    },
+    {
+      "id": "2026010",
+      "name": "정혜성",
+      "is_new": true,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026002",
+      "name": "이우솔",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026011",
+      "name": "신입",
+      "is_new": true,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    },
+    {
+      "id": "2026001",
+      "name": "이규원",
+      "is_new": false,
+      "active": true,
+      "notes": "",
+      "work_type": "general"
+    }
+  ]
+}

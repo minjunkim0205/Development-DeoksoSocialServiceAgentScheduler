@@ -1,0 +1,8 @@
+{
+  "weekday_day_target": 2,
+  "weekend_day_target": 3,
+  "weekday_night_target": 2,
+  "weekend_night_target": 2,
+  "avoid_new_pair": true,
+  "prefer_cycle": true
+}
