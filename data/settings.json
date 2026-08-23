@@ -1,8 +1,15 @@
 {
   "weekday_day_target": 2,
-  "weekend_day_target": 3,
+  "weekend_day_target": 2,
   "weekday_night_target": 2,
   "weekend_night_target": 2,
-  "avoid_new_pair": true,
-  "prefer_cycle": true
+  "max_consecutive_work_days": 5,
+  "night_rest_required": true,
+  "prefer_off_after_rest": true,
+  "prefer_day_before_night": true,
+  "senior_pair_rank_limit": 4,
+  "avoid_limited_agent_pair": true,
+  "avoid_regular_agent_pair": true,
+  "developer_mode": false,
+  "solver_time_limit_seconds": 30
 }

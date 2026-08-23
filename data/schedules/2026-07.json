@@ -1,7 +1,7 @@
 {
   "year": 2026,
-  "month": 6,
-  "month_key": "2026-06",
+  "month": 7,
+  "month_key": "2026-07",
   "settings": {
     "weekday_day_target": 2,
     "weekend_day_target": 2,
@@ -18,2093 +18,1926 @@
     "solver_time_limit_seconds": 30
   },
   "off_days": [
-    3,
-    6,
-    7,
-    13,
-    14,
-    20,
-    21,
-    27,
-    28
+    4,
+    5,
+    11,
+    12,
+    17,
+    18,
+    19,
+    25,
+    26
   ],
   "off_target": 9,
-  "previous_month_rest_day1_agent_ids": [],
-  "previous_month_off_day1_agent_ids": [],
+  "previous_month_rest_day1_agent_ids": [
+    "2026005",
+    "2026010"
+  ],
+  "previous_month_off_day1_agent_ids": [
+    "2026004",
+    "2026006"
+  ],
   "summary": {
     "by_agent": {
       "이우솔": {
+        "D": 8,
         "O": 9,
-        "D": 7,
         "N": 7,
         "R": 7
       },
       "장준혁": {
-        "D": 9,
+        "N": 7,
+        "R": 7,
+        "O": 9,
+        "D": 8
+      },
+      "김세중": {
+        "O": 9,
+        "D": 8,
+        "N": 7,
+        "R": 7
+      },
+      "하은수": {
+        "R": 7,
+        "O": 9,
+        "D": 8,
+        "N": 7
+      },
+      "이준영": {
+        "O": 9,
+        "D": 8,
+        "N": 7,
+        "R": 7
+      },
+      "고태윤": {
+        "D": 10,
         "N": 6,
         "R": 6,
         "O": 9
       },
-      "김세중": {
-        "O": 9,
-        "D": 9,
-        "N": 6,
-        "R": 6
-      },
-      "하은수": {
-        "O": 9,
-        "D": 8,
-        "N": 7,
-        "R": 6
-      },
-      "이준영": {
-        "N": 7,
-        "R": 7,
-        "O": 9,
-        "D": 7
-      },
-      "고태윤": {
-        "O": 9,
-        "N": 7,
-        "R": 7,
-        "D": 7
-      },
       "박승완": {
-        "D": 9,
+        "N": 7,
+        "R": 7,
         "O": 9,
-        "N": 6,
-        "R": 6
+        "D": 8
       },
       "김민준": {
-        "D": 21,
+        "D": 22,
         "O": 9
       },
       "정혜성": {
-        "O": 9,
-        "D": 8,
-        "N": 7,
-        "R": 6
-      },
-      "김다운": {
-        "N": 7,
         "R": 7,
         "O": 9,
-        "D": 7
+        "D": 8,
+        "N": 7
+      },
+      "김다운": {
+        "D": 8,
+        "N": 7,
+        "R": 7,
+        "O": 9
       }
     },
     "by_day": {
       "1": {
-        "O": 5,
-        "D": 3,
-        "N": 2
+        "D": 4,
+        "N": 2,
+        "O": 2,
+        "R": 2
       },
       "2": {
         "O": 3,
-        "N": 2,
+        "R": 2,
         "D": 3,
-        "R": 2
+        "N": 2
       },
       "3": {
         "D": 3,
-        "R": 2,
+        "O": 3,
         "N": 2,
-        "O": 3
+        "R": 2
       },
       "4": {
         "N": 2,
-        "O": 3,
+        "D": 3,
         "R": 2,
-        "D": 3
+        "O": 3
       },
       "5": {
         "R": 2,
-        "D": 3,
+        "N": 2,
         "O": 3,
-        "N": 2
+        "D": 3
       },
       "6": {
         "O": 3,
-        "N": 2,
+        "R": 2,
         "D": 3,
-        "R": 2
+        "N": 2
       },
       "7": {
         "D": 3,
-        "R": 2,
         "O": 3,
-        "N": 2
+        "N": 2,
+        "R": 2
       },
       "8": {
         "N": 2,
-        "O": 2,
-        "D": 4,
-        "R": 2
+        "D": 3,
+        "R": 2,
+        "O": 3
       },
       "9": {
         "R": 2,
-        "D": 3,
         "N": 2,
-        "O": 3
+        "O": 3,
+        "D": 3
       },
       "10": {
         "O": 3,
-        "N": 2,
         "R": 2,
-        "D": 3
+        "D": 3,
+        "N": 2
       },
       "11": {
         "D": 3,
-        "R": 2,
         "O": 3,
-        "N": 2
+        "N": 2,
+        "R": 2
       },
       "12": {
         "N": 2,
-        "O": 3,
         "D": 3,
-        "R": 2
+        "R": 2,
+        "O": 3
       },
       "13": {
         "R": 2,
-        "D": 3,
         "N": 2,
-        "O": 3
+        "O": 2,
+        "D": 4
       },
       "14": {
         "O": 3,
-        "N": 2,
         "R": 2,
-        "D": 3
+        "D": 3,
+        "N": 2
       },
       "15": {
         "D": 3,
-        "R": 2,
         "O": 3,
-        "N": 2
+        "N": 2,
+        "R": 2
       },
       "16": {
         "N": 2,
-        "O": 3,
         "D": 3,
-        "R": 2
+        "R": 2,
+        "O": 3
       },
       "17": {
         "R": 2,
-        "D": 4,
         "N": 2,
-        "O": 2
+        "O": 3,
+        "D": 3
       },
       "18": {
         "O": 3,
-        "N": 2,
         "R": 2,
-        "D": 3
+        "D": 3,
+        "N": 2
       },
       "19": {
         "D": 3,
         "O": 3,
-        "R": 2,
-        "N": 2
+        "N": 2,
+        "R": 2
       },
       "20": {
         "N": 2,
         "D": 3,
-        "O": 3,
-        "R": 2
+        "R": 2,
+        "O": 3
       },
       "21": {
         "R": 2,
-        "D": 3,
         "N": 2,
-        "O": 3
+        "O": 3,
+        "D": 3
       },
       "22": {
         "O": 3,
-        "N": 2,
         "R": 2,
-        "D": 3
-      },
-      "23": {
         "D": 3,
-        "R": 2,
-        "O": 3,
         "N": 2
       },
-      "24": {
-        "N": 2,
+      "23": {
         "O": 3,
         "D": 3,
+        "N": 2,
+        "R": 2
+      },
+      "24": {
+        "D": 3,
+        "O": 3,
+        "N": 2,
         "R": 2
       },
       "25": {
-        "R": 2,
-        "O": 3,
         "N": 2,
-        "D": 3
-      },
-      "26": {
-        "O": 3,
         "D": 3,
         "R": 2,
+        "O": 3
+      },
+      "26": {
+        "R": 2,
+        "D": 3,
+        "O": 3,
         "N": 2
       },
       "27": {
+        "O": 3,
         "D": 3,
         "N": 2,
-        "O": 3,
         "R": 2
       },
       "28": {
-        "N": 2,
-        "R": 2,
+        "O": 3,
         "D": 3,
-        "O": 3
+        "N": 2,
+        "R": 2
       },
       "29": {
-        "R": 2,
-        "O": 3,
+        "D": 3,
         "N": 2,
-        "D": 3
+        "R": 2,
+        "O": 3
       },
       "30": {
+        "N": 2,
+        "R": 2,
+        "O": 2,
+        "D": 4
+      },
+      "31": {
+        "R": 2,
         "O": 3,
         "D": 3,
-        "R": 2,
         "N": 2
       }
     }
   },
   "assignments": [
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "O"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-01",
+      "date": "2026-07-01",
       "day": 1,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "O"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "D"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
       "shift": "O"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "N"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-07-02",
       "day": 2,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "D"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "N"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "R"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
       "shift": "O"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-07-03",
       "day": 3,
-      "weekday": "수",
-      "is_off_day": true,
+      "weekday": "금",
+      "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "N"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "R"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "O"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
       "shift": "D"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-07-04",
       "day": 4,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "R"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "O"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "D"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
       "shift": "N"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "O"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-07-05",
       "day": 5,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "O"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "D"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "D"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "N"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
       "shift": "R"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-06",
+      "date": "2026-07-06",
       "day": 6,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "D"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "N"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "R"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
       "shift": "O"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-07",
+      "date": "2026-07-07",
       "day": 7,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
       "shift": "O"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "N"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "R"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "O"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "day": 8,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
       "shift": "D"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "R"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "O"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "D"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-07-09",
       "day": 9,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
       "shift": "N"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "O"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-07-10",
       "day": 10,
-      "weekday": "수",
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
       "shift": "R"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "D"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-07-11",
       "day": 11,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
       "shift": "O"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "N"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-07-12",
       "day": 12,
-      "weekday": "금",
-      "is_off_day": false,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "R"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-07-13",
       "day": 13,
-      "weekday": "토",
-      "is_off_day": true,
+      "weekday": "월",
+      "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "O"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-07-14",
       "day": 14,
-      "weekday": "일",
-      "is_off_day": true,
+      "weekday": "화",
+      "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "D"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "O"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "day": 15,
-      "weekday": "월",
+      "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "N"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "D"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "day": 16,
-      "weekday": "화",
+      "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "R"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "N"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "D"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-07-17",
       "day": 17,
-      "weekday": "수",
-      "is_off_day": false,
+      "weekday": "금",
+      "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "O"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "R"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-07-18",
       "day": 18,
-      "weekday": "목",
-      "is_off_day": false,
-      "agent_id": "2026011",
-      "agent_name": "김다운",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026002",
-      "agent_name": "이우솔",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026003",
-      "agent_name": "장준혁",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026004",
-      "agent_name": "김세중",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026005",
-      "agent_name": "하은수",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026006",
-      "agent_name": "이준영",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026007",
-      "agent_name": "고태윤",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026008",
-      "agent_name": "박승완",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026009",
-      "agent_name": "김민준",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026010",
-      "agent_name": "정혜성",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-19",
-      "day": 19,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026011",
-      "agent_name": "김다운",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026002",
-      "agent_name": "이우솔",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026003",
-      "agent_name": "장준혁",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026004",
-      "agent_name": "김세중",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026005",
-      "agent_name": "하은수",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026006",
-      "agent_name": "이준영",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026007",
-      "agent_name": "고태윤",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026008",
-      "agent_name": "박승완",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026009",
-      "agent_name": "김민준",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026010",
-      "agent_name": "정혜성",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-20",
-      "day": 20,
       "weekday": "토",
       "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026005",
@@ -2112,17 +1945,17 @@
       "shift": "R"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026007",
@@ -2130,17 +1963,17 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026009",
@@ -2148,8 +1981,8 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026010",
@@ -2157,44 +1990,44 @@
       "shift": "N"
     },
     {
-      "date": "2026-06-21",
-      "day": 21,
+      "date": "2026-07-19",
+      "day": 19,
       "weekday": "일",
       "is_off_day": true,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026005",
@@ -2202,35 +2035,35 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026009",
@@ -2238,8 +2071,8 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026010",
@@ -2247,44 +2080,44 @@
       "shift": "R"
     },
     {
-      "date": "2026-06-22",
-      "day": 22,
+      "date": "2026-07-20",
+      "day": 20,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "D"
+      "shift": "O"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026005",
@@ -2292,35 +2125,35 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026009",
@@ -2328,8 +2161,8 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026010",
@@ -2337,44 +2170,44 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-23",
-      "day": 23,
+      "date": "2026-07-21",
+      "day": 21,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "N"
+      "shift": "D"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026005",
@@ -2382,35 +2215,35 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "O"
+      "shift": "N"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026009",
@@ -2418,35 +2251,35 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-24",
-      "day": 24,
+      "date": "2026-07-22",
+      "day": 22,
       "weekday": "수",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026002",
       "agent_name": "이우솔",
-      "shift": "R"
+      "shift": "O"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026003",
@@ -2454,17 +2287,17 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026005",
@@ -2472,35 +2305,35 @@
       "shift": "N"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "N"
+      "shift": "O"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026007",
       "agent_name": "고태윤",
-      "shift": "D"
+      "shift": "R"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "D"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026009",
@@ -2508,377 +2341,377 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-25",
-      "day": 25,
+      "date": "2026-07-23",
+      "day": 23,
       "weekday": "목",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026002",
-      "agent_name": "이우솔",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026003",
-      "agent_name": "장준혁",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026004",
-      "agent_name": "김세중",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026005",
-      "agent_name": "하은수",
       "shift": "R"
     },
     {
-      "date": "2026-06-26",
-      "day": 26,
+      "date": "2026-07-24",
+      "day": 24,
       "weekday": "금",
       "is_off_day": false,
-      "agent_id": "2026006",
-      "agent_name": "이준영",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026007",
-      "agent_name": "고태윤",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026008",
-      "agent_name": "박승완",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026009",
-      "agent_name": "김민준",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026010",
-      "agent_name": "정혜성",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-26",
-      "day": 26,
-      "weekday": "금",
-      "is_off_day": false,
-      "agent_id": "2026011",
-      "agent_name": "김다운",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
       "agent_id": "2026002",
       "agent_name": "이우솔",
       "shift": "D"
     },
     {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026003",
-      "agent_name": "장준혁",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026004",
-      "agent_name": "김세중",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026005",
-      "agent_name": "하은수",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026006",
-      "agent_name": "이준영",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026007",
-      "agent_name": "고태윤",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026008",
-      "agent_name": "박승완",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026009",
-      "agent_name": "김민준",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026010",
-      "agent_name": "정혜성",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-27",
-      "day": 27,
-      "weekday": "토",
-      "is_off_day": true,
-      "agent_id": "2026011",
-      "agent_name": "김다운",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026002",
-      "agent_name": "이우솔",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026003",
-      "agent_name": "장준혁",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026004",
-      "agent_name": "김세중",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026005",
-      "agent_name": "하은수",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026006",
-      "agent_name": "이준영",
-      "shift": "D"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026007",
-      "agent_name": "고태윤",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026008",
-      "agent_name": "박승완",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026009",
-      "agent_name": "김민준",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026010",
-      "agent_name": "정혜성",
-      "shift": "O"
-    },
-    {
-      "date": "2026-06-28",
-      "day": 28,
-      "weekday": "일",
-      "is_off_day": true,
-      "agent_id": "2026011",
-      "agent_name": "김다운",
-      "shift": "N"
-    },
-    {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
-      "is_off_day": false,
-      "agent_id": "2026002",
-      "agent_name": "이우솔",
-      "shift": "R"
-    },
-    {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026003",
       "agent_name": "장준혁",
       "shift": "O"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
       "shift": "N"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026006",
+      "agent_name": "이준영",
       "shift": "D"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
       "is_off_day": false,
+      "agent_id": "2026007",
+      "agent_name": "고태윤",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026008",
+      "agent_name": "박승완",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026009",
+      "agent_name": "김민준",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026010",
+      "agent_name": "정혜성",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-24",
+      "day": 24,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026011",
+      "agent_name": "김다운",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
+      "agent_id": "2026002",
+      "agent_name": "이우솔",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
+      "agent_id": "2026003",
+      "agent_name": "장준혁",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
+      "agent_id": "2026004",
+      "agent_name": "김세중",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
+      "agent_id": "2026005",
+      "agent_name": "하은수",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026006",
       "agent_name": "이준영",
       "shift": "N"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
-      "is_off_day": false,
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026007",
       "agent_name": "고태윤",
       "shift": "D"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
-      "is_off_day": false,
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "O"
+      "shift": "R"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
-      "is_off_day": false,
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
       "agent_id": "2026009",
       "agent_name": "김민준",
       "shift": "O"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
-      "weekday": "월",
-      "is_off_day": false,
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
+      "agent_id": "2026010",
+      "agent_name": "정혜성",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-25",
+      "day": 25,
+      "weekday": "토",
+      "is_off_day": true,
+      "agent_id": "2026011",
+      "agent_name": "김다운",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026002",
+      "agent_name": "이우솔",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026003",
+      "agent_name": "장준혁",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026004",
+      "agent_name": "김세중",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026005",
+      "agent_name": "하은수",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026006",
+      "agent_name": "이준영",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026007",
+      "agent_name": "고태윤",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026008",
+      "agent_name": "박승완",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026009",
+      "agent_name": "김민준",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
       "agent_id": "2026010",
       "agent_name": "정혜성",
       "shift": "D"
     },
     {
-      "date": "2026-06-29",
-      "day": 29,
+      "date": "2026-07-26",
+      "day": 26,
+      "weekday": "일",
+      "is_off_day": true,
+      "agent_id": "2026011",
+      "agent_name": "김다운",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026002",
+      "agent_name": "이우솔",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026003",
+      "agent_name": "장준혁",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026004",
+      "agent_name": "김세중",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026005",
+      "agent_name": "하은수",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026006",
+      "agent_name": "이준영",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026007",
+      "agent_name": "고태윤",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026008",
+      "agent_name": "박승완",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026009",
+      "agent_name": "김민준",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
+      "weekday": "월",
+      "is_off_day": false,
+      "agent_id": "2026010",
+      "agent_name": "정혜성",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-27",
+      "day": 27,
       "weekday": "월",
       "is_off_day": false,
       "agent_id": "2026011",
@@ -2886,8 +2719,8 @@
       "shift": "R"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026002",
@@ -2895,8 +2728,8 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026003",
@@ -2904,35 +2737,35 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026004",
       "agent_name": "김세중",
-      "shift": "R"
+      "shift": "N"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026005",
       "agent_name": "하은수",
-      "shift": "N"
+      "shift": "R"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026006",
       "agent_name": "이준영",
-      "shift": "R"
+      "shift": "D"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026007",
@@ -2940,17 +2773,17 @@
       "shift": "O"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026008",
       "agent_name": "박승완",
-      "shift": "D"
+      "shift": "N"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
       "is_off_day": false,
       "agent_id": "2026009",
@@ -2958,22 +2791,292 @@
       "shift": "D"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
+      "date": "2026-07-28",
+      "day": 28,
       "weekday": "화",
+      "is_off_day": false,
+      "agent_id": "2026010",
+      "agent_name": "정혜성",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-28",
+      "day": 28,
+      "weekday": "화",
+      "is_off_day": false,
+      "agent_id": "2026011",
+      "agent_name": "김다운",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026002",
+      "agent_name": "이우솔",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026003",
+      "agent_name": "장준혁",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026004",
+      "agent_name": "김세중",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026005",
+      "agent_name": "하은수",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026006",
+      "agent_name": "이준영",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026007",
+      "agent_name": "고태윤",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026008",
+      "agent_name": "박승완",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026009",
+      "agent_name": "김민준",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026010",
+      "agent_name": "정혜성",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 29,
+      "weekday": "수",
+      "is_off_day": false,
+      "agent_id": "2026011",
+      "agent_name": "김다운",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026002",
+      "agent_name": "이우솔",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026003",
+      "agent_name": "장준혁",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026004",
+      "agent_name": "김세중",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026005",
+      "agent_name": "하은수",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026006",
+      "agent_name": "이준영",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026007",
+      "agent_name": "고태윤",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026008",
+      "agent_name": "박승완",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026009",
+      "agent_name": "김민준",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026010",
+      "agent_name": "정혜성",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-30",
+      "day": 30,
+      "weekday": "목",
+      "is_off_day": false,
+      "agent_id": "2026011",
+      "agent_name": "김다운",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026002",
+      "agent_name": "이우솔",
+      "shift": "R"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026003",
+      "agent_name": "장준혁",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026004",
+      "agent_name": "김세중",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026005",
+      "agent_name": "하은수",
+      "shift": "N"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026006",
+      "agent_name": "이준영",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026007",
+      "agent_name": "고태윤",
+      "shift": "O"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026008",
+      "agent_name": "박승완",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
+      "is_off_day": false,
+      "agent_id": "2026009",
+      "agent_name": "김민준",
+      "shift": "D"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026010",
       "agent_name": "정혜성",
       "shift": "N"
     },
     {
-      "date": "2026-06-30",
-      "day": 30,
-      "weekday": "화",
+      "date": "2026-07-31",
+      "day": 31,
+      "weekday": "금",
       "is_off_day": false,
       "agent_id": "2026011",
       "agent_name": "김다운",
-      "shift": "O"
+      "shift": "R"
     }
   ]
 }
