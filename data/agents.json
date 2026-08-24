@@ -1,114 +1,114 @@
 {
   "agents": [
     {
-      "id": "2026002",
-      "name": "이우솔",
-      "seniority_rank": 1,
-      "work_type": "general",
-      "pre_service": false,
-      "training_completed": true,
-      "active": true,
-      "notes": ""
-    },
-    {
       "id": "2026003",
+      "seniority_rank": 1,
       "name": "장준혁",
-      "seniority_rank": 2,
-      "work_type": "general",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     },
     {
       "id": "2026004",
+      "seniority_rank": 2,
       "name": "김세중",
-      "seniority_rank": 3,
-      "work_type": "general",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     },
     {
       "id": "2026005",
+      "seniority_rank": 3,
       "name": "하은수",
-      "seniority_rank": 4,
-      "work_type": "general",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     },
     {
       "id": "2026006",
+      "seniority_rank": 4,
       "name": "이준영",
-      "seniority_rank": 5,
-      "work_type": "general",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     },
     {
       "id": "2026007",
+      "seniority_rank": 5,
       "name": "고태윤",
-      "seniority_rank": 6,
-      "work_type": "general",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     },
     {
       "id": "2026008",
+      "seniority_rank": 6,
       "name": "박승완",
-      "seniority_rank": 7,
-      "work_type": "general",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     },
     {
       "id": "2026009",
+      "seniority_rank": 7,
       "name": "김민준",
-      "seniority_rank": 8,
-      "work_type": "day_only",
-      "pre_service": false,
       "training_completed": true,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "day_only",
+      "pre_service": false
     },
     {
       "id": "2026010",
+      "seniority_rank": 8,
       "name": "정혜성",
-      "seniority_rank": 9,
-      "work_type": "general",
-      "pre_service": true,
       "training_completed": false,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": true
     },
     {
       "id": "2026011",
+      "seniority_rank": 9,
       "name": "김다운",
-      "seniority_rank": 10,
-      "work_type": "general",
-      "pre_service": true,
       "training_completed": false,
       "active": true,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": true
     },
     {
       "id": "2026001",
-      "name": "이규원",
       "seniority_rank": null,
-      "work_type": "general",
-      "pre_service": false,
+      "name": "이규원",
       "training_completed": true,
       "active": false,
-      "notes": ""
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
+    },
+    {
+      "id": "2026002",
+      "seniority_rank": null,
+      "name": "이우솔",
+      "training_completed": true,
+      "active": false,
+      "notes": "",
+      "work_type": "general",
+      "pre_service": false
     }
   ]
 }

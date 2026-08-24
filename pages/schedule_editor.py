@@ -11,6 +11,7 @@ from core.storage import delete_schedule, list_schedule_months, load_schedule, s
 LABEL_TO_SHIFT = {label: shift for shift, label in SHIFT_LABELS.items()}
 SHIFT_OPTIONS = list(LABEL_TO_SHIFT.keys())
 WEEKDAY_LABELS = ["월", "화", "수", "목", "금", "토", "일"]
+SUMMARY_LABELS = ["주간", "야간", "비번", "휴일"]
 
 
 st.title("근무표 수정")
@@ -53,34 +54,55 @@ if "weekday" not in df.columns:
 
 df["근무"] = df["shift"].map(SHIFT_LABELS)
 
-st.subheader("근무상황부")
-st.markdown(render_schedule_html(schedule), unsafe_allow_html=True)
-
-st.subheader("근무표 편집")
+st.subheader("근무상황부 편집")
 roster = df.pivot_table(index=["agent_id", "agent_name"], columns="day", values="근무", aggfunc="first")
 roster = roster.reset_index().rename(columns={"agent_id": "관리번호", "agent_name": "이름"})
-day_columns = [column for column in roster.columns if isinstance(column, int)]
+day_numbers = [column for column in roster.columns if isinstance(column, int)]
+day_labels = {
+    day: f"{day}\n{WEEKDAY_LABELS[date(int(schedule['year']), int(schedule['month']), int(day)).weekday()]}"
+    for day in day_numbers
+}
+day_by_label = {label: day for day, label in day_labels.items()}
+roster = roster.rename(columns=day_labels)
+
+for label, shift in [("주", "D"), ("야", "N"), ("비", "R"), ("휴", "O")]:
+    roster[label] = roster[list(day_by_label)].eq(SHIFT_LABELS[shift]).sum(axis=1)
 
 edited = st.data_editor(
     roster,
     width="stretch",
     hide_index=True,
     num_rows="fixed",
+    column_order=["관리번호", "이름", *day_by_label.keys(), "주", "야", "비", "휴"],
     column_config={
         "관리번호": st.column_config.TextColumn("관리번호", disabled=True),
         "이름": st.column_config.TextColumn("이름", disabled=True),
         **{
-            day: st.column_config.SelectboxColumn(str(day), options=SHIFT_OPTIONS, required=True)
-            for day in day_columns
+            day_label: st.column_config.SelectboxColumn(day_label, options=SHIFT_OPTIONS, required=True)
+            for day_label in day_by_label
         },
+        "주": st.column_config.NumberColumn("주", disabled=True),
+        "야": st.column_config.NumberColumn("야", disabled=True),
+        "비": st.column_config.NumberColumn("비", disabled=True),
+        "휴": st.column_config.NumberColumn("휴", disabled=True),
     },
+    key=f"schedule_editor_{month_key}",
 )
+
+st.subheader("일자별 인원")
+daily_rows = []
+for label, shift in zip(SUMMARY_LABELS, ["D", "N", "R", "O"]):
+    row = {"구분": label}
+    for day_label in day_by_label:
+        row[day_label] = int(edited[day_label].eq(SHIFT_LABELS[shift]).sum())
+    daily_rows.append(row)
+st.dataframe(pd.DataFrame(daily_rows), width="stretch", hide_index=True)
 
 if st.button("수정사항 저장", type="primary"):
     updated_by_key = {}
     for _, row in edited.iterrows():
-        for day in day_columns:
-            updated_by_key[(str(row["관리번호"]), int(day))] = LABEL_TO_SHIFT[str(row[day])]
+        for day_label, day in day_by_label.items():
+            updated_by_key[(str(row["관리번호"]), int(day))] = LABEL_TO_SHIFT[str(row[day_label])]
 
     updated_assignments = []
     for assignment in assignments:
@@ -97,10 +119,5 @@ if st.button("수정사항 저장", type="primary"):
     st.rerun()
 
 st.divider()
-st.subheader("일자별 인원")
-daily = df.pivot_table(index=["day", "weekday"], columns="근무", values="agent_id", aggfunc="count", fill_value=0)
-for label in SHIFT_OPTIONS:
-    if label not in daily.columns:
-        daily[label] = 0
-daily = daily[SHIFT_OPTIONS].reset_index().rename(columns={"day": "일", "weekday": "요일"})
-st.dataframe(daily, width="stretch", hide_index=True)
+st.subheader("HTML 근무상황부")
+st.markdown(render_schedule_html(schedule), unsafe_allow_html=True)

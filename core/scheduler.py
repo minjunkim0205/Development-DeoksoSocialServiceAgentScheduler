@@ -14,6 +14,7 @@ SHIFT_DAY = "D"
 SHIFT_NIGHT = "N"
 SHIFT_REST = "R"
 SHIFT_OFF = "O"
+SHIFT_INACTIVE = "X"
 
 SHIFT_TYPES = [SHIFT_DAY, SHIFT_NIGHT, SHIFT_REST, SHIFT_OFF]
 
@@ -22,6 +23,7 @@ SHIFT_LABELS = {
     SHIFT_NIGHT: "야간",
     SHIFT_REST: "비번",
     SHIFT_OFF: "휴무",
+    SHIFT_INACTIVE: "###",
 }
 
 WORK_TYPE_LABELS = {
@@ -223,20 +225,26 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
             model.Add(x[(agent_index, 1, SHIFT_REST)] == 1)
             if last_day >= 2:
                 model.Add(x[(agent_index, 2, SHIFT_OFF)] == 1)
-        elif agent_id in previous_month_off_day1_ids:
+        else:
+            model.Add(x[(agent_index, 1, SHIFT_REST)] == 0)
+        if agent_id in previous_month_off_day1_ids:
             model.Add(x[(agent_index, 1, SHIFT_OFF)] == 1)
 
     single_night_days = []
+    extra_day_staffing_days = []
     overstaffed_day_days = []
+    daily_off_counts = []
     for day in days:
         work_date = date(year, month, day)
         day_target, night_target = _target_for_day(work_date, settings, off_days)
         day_count = sum(x[(agent_index, day, SHIFT_DAY)] for agent_index in range(num_agents))
         night_count = sum(x[(agent_index, day, SHIFT_NIGHT)] for agent_index in range(num_agents))
+        off_count = sum(x[(agent_index, day, SHIFT_OFF)] for agent_index in range(num_agents))
+        daily_off_counts.append(off_count)
 
         model.Add(night_count >= 1)
         model.Add(night_count <= 2)
-        model.Add(day_count <= 4)
+        model.Add(day_count <= num_agents)
 
         if is_heavy_day(work_date, off_days):
             model.Add(day_count >= 1)
@@ -247,39 +255,56 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
         night_diff = model.NewIntVar(0, num_agents, f"night_target_diff_d{day}")
         model.AddAbsEquality(day_diff, day_count - day_target)
         model.AddAbsEquality(night_diff, night_count - night_target)
-        penalties.append(day_diff * 8)
-        penalties.append(night_diff * 180)
+        penalties.append(day_diff * 320)
+        penalties.append(night_diff * 750)
+
+        low_day_staffing = model.NewBoolVar(f"low_day_staffing_d{day}")
+        model.Add(day_count <= 1).OnlyEnforceIf(low_day_staffing)
+        model.Add(day_count >= 2).OnlyEnforceIf(low_day_staffing.Not())
+        penalties.append(low_day_staffing * 800)
 
         day_over_three = model.NewIntVar(0, num_agents, f"day_over_three_d{day}")
         model.AddMaxEquality(day_over_three, [day_count - 3, 0])
-        penalties.append(day_over_three * 12000)
+        penalties.append(day_over_three * 50000)
 
         overstaffed_day = model.NewBoolVar(f"overstaffed_day_d{day}")
         model.Add(day_count >= 4).OnlyEnforceIf(overstaffed_day)
         model.Add(day_count <= 3).OnlyEnforceIf(overstaffed_day.Not())
-        penalties.append(overstaffed_day * 15000)
+        penalties.append(overstaffed_day * 50000)
         overstaffed_day_days.append(overstaffed_day)
+
+        severely_overstaffed_day = model.NewBoolVar(f"severely_overstaffed_day_d{day}")
+        model.Add(day_count >= 5).OnlyEnforceIf(severely_overstaffed_day)
+        model.Add(day_count <= 4).OnlyEnforceIf(severely_overstaffed_day.Not())
+        penalties.append(severely_overstaffed_day * 500000)
+
+        extra_day_staffing_day = model.NewBoolVar(f"extra_day_staffing_day_d{day}")
+        model.Add(day_count > day_target).OnlyEnforceIf(extra_day_staffing_day)
+        model.Add(day_count <= day_target).OnlyEnforceIf(extra_day_staffing_day.Not())
+        penalties.append(extra_day_staffing_day * (40 if is_heavy_day(work_date, off_days) else 400))
+        extra_day_staffing_days.append(extra_day_staffing_day)
 
         single_night_day = model.NewBoolVar(f"single_night_day_d{day}")
         model.Add(night_count == 1).OnlyEnforceIf(single_night_day)
         model.Add(night_count != 1).OnlyEnforceIf(single_night_day.Not())
-        penalties.append(single_night_day * 900)
+        penalties.append(single_night_day * 1200)
         single_night_days.append(single_night_day)
 
     single_night_over_limit = model.NewIntVar(0, last_day, "single_night_over_limit")
     model.AddMaxEquality(single_night_over_limit, [sum(single_night_days) - 2, 0])
-    penalties.append(single_night_over_limit * 5000)
+    penalties.append(single_night_over_limit * 1800)
 
     overstaffed_day_over_limit = model.NewIntVar(0, last_day, "overstaffed_day_over_limit")
-    model.AddMaxEquality(overstaffed_day_over_limit, [sum(overstaffed_day_days) - 1, 0])
-    penalties.append(overstaffed_day_over_limit * 60000)
+    model.AddMaxEquality(overstaffed_day_over_limit, [sum(overstaffed_day_days) - 4, 0])
+    penalties.append(overstaffed_day_over_limit * 220)
+
+    extra_day_staffing_over_limit = model.NewIntVar(0, last_day, "extra_day_staffing_over_limit")
+    model.AddMaxEquality(extra_day_staffing_over_limit, [sum(extra_day_staffing_days) - 3, 0])
+    penalties.append(extra_day_staffing_over_limit * 4000)
 
     for agent_index in range(num_agents):
         for day in range(1, last_day):
-            model.AddImplication(
-                x[(agent_index, day, SHIFT_NIGHT)],
-                x[(agent_index, day + 1, SHIFT_REST)],
-            )
+            model.Add(x[(agent_index, day + 1, SHIFT_REST)] == x[(agent_index, day, SHIFT_NIGHT)])
         for day in range(1, last_day - 1):
             model.AddImplication(
                 x[(agent_index, day, SHIFT_NIGHT)],
@@ -310,22 +335,23 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
                 penalties.append(night_without_day_before * 75)
 
     for agent_index, agent in enumerate(active_agents):
-        if agent.get("work_type") == "day_only":
-            continue
-
-        for streak_length, weight in [(2, 55), (3, 220), (4, 700), (5, 1600)]:
-            for start_day in range(1, last_day - streak_length + 2):
-                streak_days = range(start_day, start_day + streak_length)
-                day_streak = model.NewBoolVar(
-                    f"day_streak_{streak_length}_a{agent_index}_d{start_day}"
-                )
-                model.AddBoolAnd(
-                    [x[(agent_index, day, SHIFT_DAY)] for day in streak_days]
-                ).OnlyEnforceIf(day_streak)
-                model.AddBoolOr(
-                    [x[(agent_index, day, SHIFT_DAY)].Not() for day in streak_days]
-                ).OnlyEnforceIf(day_streak.Not())
-                penalties.append(day_streak * weight)
+        for day in range(2, last_day):
+            isolated_off = model.NewBoolVar(f"isolated_off_a{agent_index}_d{day}")
+            model.AddBoolAnd(
+                [
+                    x[(agent_index, day - 1, SHIFT_OFF)].Not(),
+                    x[(agent_index, day, SHIFT_OFF)],
+                    x[(agent_index, day + 1, SHIFT_OFF)].Not(),
+                ]
+            ).OnlyEnforceIf(isolated_off)
+            model.AddBoolOr(
+                [
+                    x[(agent_index, day - 1, SHIFT_OFF)],
+                    x[(agent_index, day, SHIFT_OFF)].Not(),
+                    x[(agent_index, day + 1, SHIFT_OFF)],
+                ]
+            ).OnlyEnforceIf(isolated_off.Not())
+            penalties.append(isolated_off * (90 if agent.get("work_type") == "day_only" else 35))
 
     limited_agent_indexes = [
         index
@@ -365,13 +391,6 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
         model.Add(off_count == sum(x[(agent_index, day, SHIFT_OFF)] for day in days))
         model.Add(off_count == off_target)
 
-        previous_carry_rest = 1 if str(active_agents[agent_index]["id"]) in previous_month_rest_day1_ids else 0
-        model.Add(
-            rest_count
-            == sum(x[(agent_index, day, SHIFT_NIGHT)] for day in range(1, last_day))
-            + previous_carry_rest
-        )
-
         work_counts.append(work_count)
         night_counts.append(night_count)
         off_counts.append(off_count)
@@ -391,8 +410,14 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
     model.AddMinEquality(min_off, off_counts)
     model.Add(max_off == min_off)
 
+    max_daily_off = model.NewIntVar(0, num_agents, "max_daily_off")
+    min_daily_off = model.NewIntVar(0, num_agents, "min_daily_off")
+    model.AddMaxEquality(max_daily_off, daily_off_counts)
+    model.AddMinEquality(min_daily_off, daily_off_counts)
+
     penalties.append((max_work - min_work) * 20)
     penalties.append((max_night - min_night) * 10)
+    penalties.append((max_daily_off - min_daily_off) * 200)
 
     model.Minimize(sum(penalties))
 
@@ -425,6 +450,15 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
                 }
             )
 
+    validation = validate_assignments(
+        assignments,
+        off_target,
+        previous_month_rest_day1_ids,
+        previous_month_off_day1_ids,
+    )
+    if validation["hard_error_count"] > 0:
+        raise ValueError("생성 후 검증 실패: " + "; ".join(validation["hard_errors"][:3]))
+
     return {
         "year": int(year),
         "month": int(month),
@@ -434,8 +468,94 @@ def generate_schedule(year: int, month: int, agents: list[dict], settings: dict 
         "off_target": off_target,
         "previous_month_rest_day1_agent_ids": sorted(previous_month_rest_day1_ids),
         "previous_month_off_day1_agent_ids": sorted(previous_month_off_day1_ids),
+        "validation": validation,
         "summary": summarize_assignments(assignments),
         "assignments": assignments,
+    }
+
+
+def validate_assignments(
+    assignments: list[dict],
+    off_target: int,
+    previous_month_rest_day1_ids: set[str],
+    previous_month_off_day1_ids: set[str],
+) -> dict:
+    hard_errors = []
+    by_agent_day: dict[tuple[str, int], str] = {}
+    by_agent_name: dict[str, str] = {}
+    by_agent: dict[str, Counter] = {}
+    by_day: dict[int, Counter] = {}
+
+    for assignment in assignments:
+        agent_id = str(assignment["agent_id"])
+        agent_name = str(assignment["agent_name"])
+        day = int(assignment["day"])
+        shift = str(assignment["shift"])
+        key = (agent_id, day)
+        by_agent_name[agent_id] = agent_name
+        if key in by_agent_day:
+            hard_errors.append(f"{agent_name} {day}일 중복 배정")
+        if shift not in [*SHIFT_TYPES, SHIFT_INACTIVE]:
+            hard_errors.append(f"{agent_name} {day}일 알 수 없는 근무 코드 {shift}")
+        by_agent_day[key] = shift
+        by_agent.setdefault(agent_id, Counter())[shift] += 1
+        by_day.setdefault(day, Counter())[shift] += 1
+
+    last_day = max(by_day.keys(), default=0)
+    for agent_id, counts in by_agent.items():
+        agent_name = by_agent_name.get(agent_id, agent_id)
+        actual_off = counts.get(SHIFT_OFF, 0)
+        if counts.get(SHIFT_INACTIVE, 0) > 0:
+            continue
+        if actual_off != off_target:
+            hard_errors.append(f"{agent_name} 휴무 {actual_off}개, 목표 {off_target}개")
+
+    for (agent_id, day), shift in by_agent_day.items():
+        agent_name = by_agent_name.get(agent_id, agent_id)
+        if shift == SHIFT_NIGHT and day < last_day:
+            if by_agent_day.get((agent_id, day + 1)) != SHIFT_REST:
+                hard_errors.append(f"{agent_name} {day}일 야간 후 {day + 1}일 비번 없음")
+            if day + 2 <= last_day and by_agent_day.get((agent_id, day + 2)) != SHIFT_OFF:
+                hard_errors.append(f"{agent_name} {day}일 야간 후 {day + 2}일 휴무 없음")
+        if shift == SHIFT_REST:
+            if day == 1:
+                if agent_id not in previous_month_rest_day1_ids:
+                    hard_errors.append(f"{agent_name} 1일 비번의 전월 야간 없음")
+            elif by_agent_day.get((agent_id, day - 1)) != SHIFT_NIGHT:
+                hard_errors.append(f"{agent_name} {day}일 비번의 전날 야간 없음")
+
+    for agent_id in previous_month_rest_day1_ids:
+        agent_name = by_agent_name.get(agent_id, agent_id)
+        if by_agent_day.get((agent_id, 1)) != SHIFT_REST:
+            hard_errors.append(f"{agent_name} 전월 말 야간 이월 1일 비번 없음")
+        if last_day >= 2 and by_agent_day.get((agent_id, 2)) != SHIFT_OFF:
+            hard_errors.append(f"{agent_name} 전월 말 야간 이월 2일 휴무 없음")
+    for agent_id in previous_month_off_day1_ids:
+        agent_name = by_agent_name.get(agent_id, agent_id)
+        if by_agent_day.get((agent_id, 1)) != SHIFT_OFF:
+            hard_errors.append(f"{agent_name} 전월 마지막 전날 야간 이월 1일 휴무 없음")
+
+    daily_totals = {
+        str(day): {
+            SHIFT_DAY: int(counter.get(SHIFT_DAY, 0)),
+            SHIFT_NIGHT: int(counter.get(SHIFT_NIGHT, 0)),
+            SHIFT_REST: int(counter.get(SHIFT_REST, 0)),
+            SHIFT_OFF: int(counter.get(SHIFT_OFF, 0)),
+            SHIFT_INACTIVE: int(counter.get(SHIFT_INACTIVE, 0)),
+            "total": int(
+                counter.get(SHIFT_DAY, 0)
+                + counter.get(SHIFT_NIGHT, 0)
+                + counter.get(SHIFT_REST, 0)
+                + counter.get(SHIFT_OFF, 0)
+            ),
+        }
+        for day, counter in sorted(by_day.items())
+    }
+
+    return {
+        "hard_error_count": len(hard_errors),
+        "hard_errors": hard_errors,
+        "daily_totals": daily_totals,
     }
 
 

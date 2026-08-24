@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from collections import Counter
 from datetime import date
@@ -10,6 +10,7 @@ SHIFT_SHORT_LABELS = {
     "N": "야",
     "R": "비",
     "O": "휴",
+    "X": "###",
 }
 
 SUMMARY_COLUMNS = [
@@ -79,7 +80,7 @@ def render_schedule_html(schedule: dict, title: str | None = None) -> str:
         for day in days:
             shift = shifts.get(day, "")
             label = SHIFT_SHORT_LABELS.get(shift, "")
-            shift_class = "shift-off" if shift == "O" else ""
+            shift_class = "shift-off" if shift == "O" else "shift-inactive" if shift == "X" else ""
             shift_cells.append(f'<td class="{shift_class}">{escape(label)}</td>')
 
         summary_cells = [f"<td>{counts.get(shift, 0)}</td>" for shift, _ in SUMMARY_COLUMNS]
@@ -94,7 +95,9 @@ def render_schedule_html(schedule: dict, title: str | None = None) -> str:
 
     daily_counts: dict[str, Counter] = {shift: Counter() for shift, _ in SUMMARY_COLUMNS}
     for item in assignments:
-        daily_counts[str(item["shift"])][int(item["day"])] += 1
+        shift = str(item["shift"])
+        if shift in daily_counts:
+            daily_counts[shift][int(item["day"])] += 1
 
     bottom_rows = []
     for shift, _ in SUMMARY_COLUMNS:
@@ -187,6 +190,11 @@ def render_schedule_html(schedule: dict, title: str | None = None) -> str:
 }}
 .schedule-sheet td.shift-off {{
   background: #d9d9d9;
+}}
+.schedule-sheet td.shift-inactive {{
+  background: #f2f2f2;
+  color: #555;
+  font-size: 14px;
 }}
 .schedule-sheet .bottom-gap td,
 .schedule-sheet .bottom-gap th {{
